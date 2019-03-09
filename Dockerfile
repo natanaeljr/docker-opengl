@@ -1,4 +1,4 @@
-FROM dockcross/base:latest
+FROM ubuntu:latest
 MAINTAINER Matt McCormick <matt.mccormick@kitware.com>
 
 ENV DEFAULT_DOCKCROSS_IMAGE thewtex/opengl
@@ -18,6 +18,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
   xinit \
   xserver-xorg-video-dummy \
   xserver-xorg-input-void \
+  wget \
   websockify && \
   rm -f /usr/share/applications/x11vnc.desktop && \
   apt-get remove -y python-pip && \

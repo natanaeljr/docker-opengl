@@ -18,6 +18,13 @@ with a modern web browser (Mac OSX, Windows, Linux, Android, iOS, ChromeOS,
 ...). It can be used to expose a graphical interface from a Docker container
 or to run continuous integration tests that require a graphical environment.
 
+natanaeljr/docker-opengl Fork
+-----------------------------
+
+This fork changes the base docker image to `ubuntu:latest`, which resolves to
+Ubuntu 18.04 (Bionic) currently. This way we have access to up-to-date libraries
+so that we can run c++17 applications :) Enjoy!
+
 Quick-start
 -----------
 
